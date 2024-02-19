@@ -1,0 +1,73 @@
+/* Vidhi Thakkar - 8927276
+CSS file for assignment_1.  */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #0a0a0a; 
+    color: #e4e4e4; 
+}
+
+h1, h2 {
+    color: #198754; 
+    font-variant: small-caps;
+}
+
+figcaption, q {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+footer p {
+    font-size: 0.8rem;
+}
+
+.image-container img, .responsive-figure, iframe, video {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 2px solid #198754; 
+}
+
+.main-section, header, footer, #bio, #quote q {
+    text-align: center;
+    padding: 1rem;
+    border: 3px solid #198754; 
+}
+
+#bio {
+    text-align: left;
+}
+
+header, footer {
+    background-color: #000000; 
+    color: #ffffff; 
+
+.main-section {
+    background-color: #121212;
+    border-radius: 0.5rem;
+}
+
+#quote q {
+    box-shadow: 0 -5px 5px -5px #198754, 
+                5px 0 5px -5px #198754, 
+                -5px 0 5px -5px #198754;
+}
+
+figcaption {
+    color: #ffffff; 
+}
+
+#absolute-path-image, #relative-path-image {
+    background-color: #242424; 
+    color: #ffffff; 
+}
