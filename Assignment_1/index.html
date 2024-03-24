@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amitabh Bachchan </title>
+    <title>Amitabh Bachchan - Contact</title>
     <meta name="description"
         content="Amitabh Bachchan (born October 11, 1942, Allahabad, India) Indian film actor, perhaps the most popular star in the history of India’s cinema, known primarily for his roles in action films.">
     <meta name="keywords"
@@ -21,67 +21,9 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-
     <header>
         <h1>Amitabh Bachchan</h1>
     </header>
-    <main>
-        <section id="biography" class="main-section">
-            <h2>Biography</h2>
-            <blockquote id="bio" cite="https://www.britannica.com/biography/Amitabh-Bachchan">
-                <p>Bachchan returned to film and won a National Film Award for his portrayal of a mafia don in Agneepath
-                    (1990; “Path of Fire”). He later headed Amitabh Bachchan Corporation Ltd., an entertainment venture
-                    that specialized in film production and event management. The business was plagued by financial
-                    difficulties, however, and Bachchan eventually returned to performing. His later movies included the
-                    crime drama Hum (1991); Mohabbatein (2000; Love Stories), a musical that was a major box-office
-                    success; and Black (2005), which was inspired by Helen Keller’s life story. For the latter film
-                    Bachchan won another National Film Award, and he also received that honour for his performance in
-                    the drama Paa (2009), playing a boy who suffers from an aging disease similar to progeria.
-
-                    By the early 21st century, Bachchan had appeared in more than 175 Bollywood films, and at age 70 he
-                    made his Hollywood debut as a minor character in Baz Luhrmann’s The Great Gatsby (2013). His later
-                    notable films included the comedy Piku (2015), for which he won his fourth National Film Award, and
-                    Pink (2016), a crime drama in which he was cast as a lawyer. In 102 Not Out (2018), he played a man
-                    trying to break the record for the oldest man alive. The crime drama Badla (2019) was among the
-                    biggest hits of Bachchan’s career.
-
-                    In addition, from 2000 to 2006 Bachchan hosted the television game show Kaun Banega Crorepati, the
-                    Indian version of the American and British hit Who Wants to Be a Millionaire? His easygoing nature
-                    and charisma helped make the show one of India’s top television programs.</p>
-            </blockquote>
-        </section>
-        <section id="images" class="main-section">
-            <h2>Images</h2>
-            <!-- First image through absolute path with unquie ID -->
-            <figure class="main-section-figure" id="absolute-path-image">
-                <img src="https://cdn.britannica.com/12/215912-050-02257657/Indian-actor-Amitabh-Bachchan-2013.jpg" width="200" alt="about image">
-            </figure>
-            <!-- Second image by relative path with unique ID -->
-            <figure class="main-section-figure" id="relative-path-image">
-                <img src="./images/amitabh 2.jpg" alt="about image">
-                <!-- First image through absolute path with unquie ID (removed) -->
-<!--<figure class="main-section-figure" id="absolute-path-image">
-    <img src="https://cdn.britannica.com/12/215912-050-02257657/Indian-actor-Amitabh-Bachchan-2013.jpg" width="200" alt="about image">
-</figure>-->
-
-            </figure>
-        </section>
-        <section id="quotes" class="main-section">
-            <h2>Quotes</h2>
-            <blockquote id="quote">
-                <p>“People will force their thinking on you, their boundaries on you. They will tell you how to dress,
-                    how to behave, who you can meet and where you can go. Don't live in the shadows of people's
-                    judgment.” “No one is perfect, and criticism is always welcome and expected.”</p>
-            </blockquote>
-        </section>
-        <section id="media" class="main-section">
-            <h2>Media</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/hqa0na95Rks?si=eiBWTkh2C6VJUFGs"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-        </section>
-    </main>
     <aside>
         <h3>Frequently Asked Questions</h3>
         <table>
@@ -104,7 +46,36 @@
         </table>
         <h3>External Links</h3>
         <ul>
-            <li><a href="https://en.wikipedia.org/wiki/Amit
+            <li><a href="https://en.wikipedia.org/wiki/Amitabh_Bachchan" target="_blank">Wikipedia</a></li>
+            <li><a href="https://www.imdb.com/name/nm0000821/" target="_blank">IMDb</a></li>
+            <li><a href="https://twitter.com/SrBachchan" target="_blank">Twitter</a></li>
+        </ul>
+    </aside>
+    <main>
+        <section id="contact-form" class="main-section">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required autofocus><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+                <label for="phone">Phone:</label><br>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Format: 123-456-7890" required><br>
+                <label for="dob">Date of Birth:</label><br>
+                <input type="date" id="dob" name="dob"><br>
+                <label for="subject">Subject:</label><br>
+                <select id="subject" name="subject" required>
+                    <option value="" disabled selected>Select a subject</option>
+                    <option value="general">General Inquiry</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="support">Support</option>
+                </select><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter your message"></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
     <footer>
         <p>&copy; Vidhi Thakkar, 2024</p>
     </footer>
