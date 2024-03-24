@@ -4,70 +4,150 @@ CSS file for assignment_1.  */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* Global styles */
+
+/* Decrease html font */
+html {
+    font-size: 16px; /* Set base font size */
+}
+
+/* Adjust box model and alignment */
 body {
-    font-family: 'Poppins', sans-serif;
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1rem;
-    background-color: #0a0a0a; 
-    color: #e4e4e4; 
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Change font-family as needed */
 }
 
-h1, h2 {
-    color: #198754; 
-    font-variant: small-caps;
+.container {
+    width: 90%; /* Set width of container */
+    max-width: 1200px; /* Set maximum width of container */
+    margin: 0 auto; /* Center container */
 }
 
-figcaption, q {
-    font-weight: bold;
-    font-style: italic;
-    font-size: 1.1rem;
+/* Adjust widths */
+.content {
+    width: 100%; /* Set width of content */
 }
 
-footer p {
-    font-size: 0.8rem;
+/* Remove floats */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
-.image-container img, .responsive-figure, iframe, video {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    border: 2px solid #198754; 
+/* Media queries for different screen sizes */
+
+/* Small screens */
+@media only screen and (max-width: 600px) {
+    /* Adjust font size */
+    html {
+        font-size: 14px;
+    }
+
+    /* Adjust widths */
+    .container {
+        width: 90%;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    /* Remove floats */
+    .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Additional styling as needed for small screens */
 }
 
-.main-section, header, footer, #bio, #quote q {
-    text-align: center;
-    padding: 1rem;
-    border: 3px solid #198754; 
+/* Medium screens */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    /* Adjust font size */
+    html {
+        font-size: 15px;
+    }
+
+    /* Adjust widths */
+    .container {
+        width: 80%;
+    }
+
+    .content {
+        width: 70%;
+    }
+
+    /* Remove floats */
+    .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Additional styling as needed for medium screens */
 }
 
-#bio {
-    text-align: left;
+/* Large screens */
+@media only screen and (min-width: 901px) {
+    /* Adjust font size */
+    html {
+        font-size: 16px;
+    }
+
+    /* Adjust widths */
+    .container {
+        width: 70%;
+    }
+
+    .content {
+        width: 60%;
+    }
+
+    /* Remove floats */
+    .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Additional styling as needed for large screens */
 }
 
-header, footer {
-    background-color: #000000; 
-    color: #ffffff; 
-
-.main-section {
-    background-color: #121212;
-    border-radius: 0.5rem;
+/* Styling for labels */
+label {
+    color: #333; /* Adjust font color as needed */
+    font-variant: small-caps; /* Adjust font variant as needed */
+    font-weight: bold; /* Adjust font weight as needed */
+    text-align: right; /* Adjust alignment as needed */
 }
 
-#quote q {
-    box-shadow: 0 -5px 5px -5px #198754, 
-                5px 0 5px -5px #198754, 
-                -5px 0 5px -5px #198754;
+/* Styling for input controls */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="checkbox"],
+input[type="radio"],
+select,
+textarea {
+    width: 100%; /* Adjust width as needed */
+    height: 40px; /* Adjust height as needed */
+    padding: 8px; /* Adjust padding as needed */
+    margin: 5px 0; /* Adjust margin as needed */
+    box-sizing: border-box; /* Include padding and border in the width */
+    text-align: left; /* Adjust alignment as needed */
+    border-radius: 5px; /* Optional: Adjust border radius */
+    border: 1px solid #ccc; /* Optional: Adjust border color */
 }
 
-figcaption {
-    color: #ffffff; 
-}
-
-#absolute-path-image, #relative-path-image {
-    background-color: #242424; 
-    color: #ffffff; 
+/* Styling for checkboxes and radio buttons */
+input[type="checkbox"],
+input[type="radio"] {
+    width: auto; /* Adjust width as needed */
+    height: auto; /* Adjust height as needed */
+    margin: 5px; /* Adjust margin as needed */
+    vertical-align: middle; /* Align checkboxes and radio buttons with text */
 }
