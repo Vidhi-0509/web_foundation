@@ -7,9 +7,6 @@ CSS file for assignment_1.  */
 /* Global styles */
 
 /* Decrease html font */
-html {
-    font-size: 16px; /* Set base font size */
-}
 
 /* Adjust box model and alignment */
 body {
